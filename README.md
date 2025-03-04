@@ -7,7 +7,7 @@ This is a simple TicTacToe game implemented in C++ using the Qt framework.
 To build and run this application, you will need the following:
 
 -   **Qt Development Environment:**
-    -      Qt 5 or 6 (including the `qtbase5-dev` or `qtbase6-dev` package on Debian/Ubuntu-based systems).
+    -      Qt 5 or 6 
     -      `qttools5-dev-tools` or `qttools6-dev-tools` (for `qmake`).
     -   A C++ compiler (like g++).
 -   **Docker (Optional):** If you wish to run this application within a Docker container.
