@@ -1,0 +1,25 @@
+# Use an official Qt base image
+FROM qt:latest
+
+# Install C++ build tools
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    cmake \
+    qtbase5-dev \
+    qtchooser \
+    qt5-qmake \
+    qtbase5-dev-tools \
+    g++
+
+# Create and set the working directory
+WORKDIR /app
+
+# Copy the C++ source files into the container
+COPY . /app
+
+# Build the project
+RUN qmake TicTacToe.pro && make
+
+# Set the command to run the application
+CMD ["./TicTacToe"]
+
